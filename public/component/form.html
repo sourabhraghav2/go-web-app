@@ -1,0 +1,25 @@
+{{define "submit-form"}}
+<div class="container">
+    <h1>Full-stack developer assignment :Submit</h1>
+    <form action="/rest" method="POST" content="application/x-www-form-urlencoded">
+        <div class="mb-3">
+            <label for="first_name" class="form-label">First Name</label>
+            <input name="first_name" type="text" class="form-control" id="first_name" placeholder="{{.FirstName}}">
+        </div>
+        <div class="mb-3">
+            <label for="last_name" class="form-label">Last Name</label>
+            <input name="last_name" type="text" class="form-control" id="last_name" placeholder="{{.LastName}}">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input name="email" type="email" class="form-control" id="email" placeholder="{{.Email}}">
+        </div>
+        <div class="mb-3">
+            <label for="phone_number" class="form-label">Phone Number</label>
+            <input name="phone_number" type="tel" class="form-control" id="phone_number" placeholder="{{.PhoneNumber}}">
+        </div>
+        <div class="mb-3"></div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{{end}}
